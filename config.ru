@@ -12,6 +12,7 @@ map '/lobster' do
 end
 
 map '/' do
+  puts 'got erquest'
   welcome = proc do |env|
     [200, { "Content-Type" => "text/html" }, [<<WELCOME_CONTENTS
 <!doctype html>
